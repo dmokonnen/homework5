@@ -5,6 +5,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -35,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         }
         if(found) {
             intent.putExtra("message",input )
+            Toast.makeText(this, "You Signed in Successfully", 4*Toast.LENGTH_LONG).show()
             startActivity(intent)
         }
     }

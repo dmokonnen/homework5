@@ -12,6 +12,7 @@ class ShopppingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_shoppping)
+
         val intent = getIntent()
         val output = intent.getStringExtra("message")
         welcome.text = "Welcome $output"
